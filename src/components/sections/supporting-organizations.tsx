@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 const organizations = [
   {
@@ -82,9 +83,11 @@ export default function SupportingOrganizations() {
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <div className="flex items-center space-x-4 mb-4">
-                        <img
+                        <Image
                           src={org.logo}
                           alt={`${org.name} logo`}
+                          width={48}
+                          height={48}
                           className="h-12 w-auto object-contain"
                         />
                         <div>

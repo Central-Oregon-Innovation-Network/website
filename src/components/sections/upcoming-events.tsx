@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Calendar, Clock, MapPin, Users } from 'lucide-react'
 import { formatDate } from '@/lib/utils'
+import Image from 'next/image'
 
 // Mock upcoming events data
 const upcomingEvents = [
@@ -102,10 +103,11 @@ export default function UpcomingEvents() {
             >
               <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src={event.image}
                     alt={event.title}
-                    className="h-full w-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <CardHeader>
