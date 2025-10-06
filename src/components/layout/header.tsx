@@ -3,8 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Mountain } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { Menu, X } from 'lucide-react'
 
 const navigation = [
   { name: 'About', href: '/about' },

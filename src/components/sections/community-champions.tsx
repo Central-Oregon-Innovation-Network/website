@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Linkedin, Twitter, ExternalLink } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 
 const champions = [
   {
@@ -108,16 +108,6 @@ export default function CommunityChampions() {
                           className="text-gray-400 hover:text-oregon-blue-600 transition-colors"
                         >
                           <Linkedin className="h-5 w-5" />
-                        </a>
-                      )}
-                      {champion.twitter && (
-                        <a
-                          href={champion.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-oregon-blue-600 transition-colors"
-                        >
-                          <Twitter className="h-5 w-5" />
                         </a>
                       )}
                     </div>

@@ -7,6 +7,7 @@ import Footer from '@/components/layout/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://centraloregoninnovation.com'),
   title: 'Central Oregon Innovation Network',
   description: 'Empowering the innovation community in Central Oregon - one resource, connection, collaboration, and event at a time.',
   keywords: ['Central Oregon', 'innovation', 'tech startups', 'entrepreneurship', 'Bend Oregon', 'startup community'],
