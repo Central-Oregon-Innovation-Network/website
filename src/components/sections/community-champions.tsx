@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Linkedin } from 'lucide-react'
+import Image from 'next/image'
 
 const champions = [
   {
@@ -87,10 +88,12 @@ export default function CommunityChampions() {
               <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-8">
                   <div className="text-center">
-                    <img
+                    <Image
                       className="mx-auto h-32 w-32 rounded-full object-cover"
                       src={champion.image}
                       alt={champion.name}
+                      width={128}
+                      height={128}
                     />
                     <h3 className="mt-6 text-lg font-semibold text-gray-900">{champion.name}</h3>
                     <p className="text-sm text-oregon-blue-600 font-medium">{champion.title}</p>

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Users, Calendar, Lightbulb } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -24,10 +25,12 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
-        <img
+        <Image
           src="/images/coin_hero.png"
           alt="Central Oregon Innovation Network - Tech entrepreneur working in nature"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 

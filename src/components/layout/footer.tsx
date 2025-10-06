@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Mail, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -8,9 +9,11 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <div className="flex items-center space-x-3">
-              <img
+              <Image
                 src="/images/COIN_logo.png"
                 alt="Central Oregon Innovation Network Logo"
+                width={40}
+                height={40}
                 className="h-10 w-auto"
               />
             </div>

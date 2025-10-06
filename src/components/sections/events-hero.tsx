@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Calendar, Users, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 export default function EventsHero() {
   return (
@@ -9,10 +10,12 @@ export default function EventsHero() {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
           alt="Tech conference presentation"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 

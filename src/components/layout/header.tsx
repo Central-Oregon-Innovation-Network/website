@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -20,10 +21,13 @@ export default function Header() {
       <div className="flex items-center justify-between p-6 lg:px-8">
         <Link href="/" className="flex lg:flex-1">
           <div className="p-2 flex items-center bg-white/90 backdrop-blur-sm rounded-lg shadow-sm hover:bg-white transition-colors relative z-50 cursor-pointer">
-            <img
+            <Image
               src="/images/COIN_logo.png"
               alt="Central Oregon Innovation Network Logo"
+              width={48}
+              height={48}
               className="h-12 w-auto"
+              priority
             />
           </div>
         </Link>
@@ -72,9 +76,11 @@ export default function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="p-2 flex items-center bg-gray-50 rounded-lg shadow-sm hover:bg-gray-100 transition-colors">
-                <img
+                <Image
                   src="/images/COIN_logo.png"
                   alt="Central Oregon Innovation Network Logo"
+                  width={48}
+                  height={48}
                   className="h-12 w-auto"
                 />
               </Link>
